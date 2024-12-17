@@ -1,0 +1,326 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+ /* }
+ body {
+    color: #ededed;
+ } */
+
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    background: #16698A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+
+  .logo {
+    height: 40px;
+    width: 50px;
+  }
+  
+
+   .navbar a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+   }
+   .navbar a:hover,
+   .navbar a.active {
+    color: #F75022;
+   }
+
+
+
+   .home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+   }
+
+   .home-content h1 {
+    font-size: 45px;
+    font-weight: 700;
+    color: black;
+   }
+    
+   .home-content h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #F75022;
+   } 
+
+   .home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color:rgb(0, 176, 23)
+   }
+
+   .home-content p {
+    font-size: 21px;
+    color: black;
+   }
+
+
+
+   .image img {
+    display: block;
+    margin-left: auto;
+   }
+
+
+    .home-content .btn-box {
+      display: block;
+      width: 350px;
+      height: 50px;      
+    }
+    .btn-box > a {
+    background: #F75022;
+    border: 2px solid #F75022;
+    border-radius: 8px;
+    padding: 0.6em 1.5em;
+    font-size: 15px;
+    color:#fff;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    }
+    .btn-box a::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      background: rgb(255, 255, 255);
+      z-index: -1;
+      transition: .5s;
+    }
+    .btn-box a:hover::before {
+      width: 10%;
+    }
+
+    .home-content{
+      display: flex;
+    }
+
+    .link {
+      position: absolute;
+      bottom: 40px;
+      width: 150px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .link a {
+      position: relative;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border: 2px solid #16698A;
+      border-radius: 50%;
+      font-size: 20px;
+      color:#16698A;
+      text-decoration: none;
+      z-index: 1;
+      overflow: hidden;
+
+    } 
+     .link a::before{
+      content: '';
+      position:absolute;
+      top: 0;
+      left: 0;
+      width:0 ;
+      height: 100%;
+      background: #F75022;
+      z-index: -1;
+      transition: .4s;
+     }
+     .link a:hover {
+      color: #16698A;
+     }
+
+     .link a:hover::before {
+      width: 100%;
+
+     }
+
+     .home-content > div{
+      width: 48%;
+     }
+
+     .skills {
+      align-items: center;
+      font-size: 30px;
+      margin-bottom: 60px;
+      /* color: black; */
+      padding:0 50%;
+     }
+
+     .img {
+      /* width: 100vh;   */
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    padding: 0 10%;
+     }
+ 
+ .img_2 {
+    padding: 0 18%;
+
+ }
+ .intro h2 {
+  color: #16698A;
+  padding: 0 30%;
+  font-size: 2rem;;
+  margin-top: 20px;
+ }
+ .intro h1 {
+  color:black;
+  padding: 0 30%;
+  font-size: 2.5rem;
+ }
+ .h1  {
+  color: rgb(0, 176, 23)
+ }
+ .intro p {
+  color: black;
+  font-size: 21px;
+  padding: 0 30%;
+  margin-bottom: 60px;
+  align-items: center;
+ }
+
+
+ /* MIT License
+
+Copyright (c) 2023 Jefferson
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+ */
+* {
+  /* background-color: #212121; */
+}
+footer
+{
+    position: relative;
+    width: 100%;
+    background-color: #212121;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* timezone */
+  .country .date {
+    font-size: 18px;
+    /* font-style: italic; */
+    text-align: center;
+    color: #dfe6e9;
+  }
+  .country .time {
+    font-size: 20px;
+    /* text-align: center; */
+    color: #dfe6e9;
+    display: flex;
+    float: left;
+  }
+  .time-detail{
+    display: flex;
+    font-size: 20px;
+
+    float: right;
+    color: #dfe6e9;
+  }
+
+#media {
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+#media li
+{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+
+
+}
+#media  li a
+{
+    position: relative;
+    text-decoration: none;
+    color: var(--clr);
+    z-index: 10;
+    font-size: 2em;
+    transition: 0.5s ease-in-out;
+
+}
+#media  li:hover
+{
+    z-index: 100000;
+    transform: scale(0.75);
+    transform: translateY(-10px);
+}
+#media  li::before
+{
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--clr),
+    0 0 0 20px var(--bg),
+    0 0 0 22px var(--clr);
+    transition: 0.5s;
+}
+#media  li:hover::before
+{
+  inset: 0px;
+}
+#media  li::after
+{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:var(--bg);
+    transform: rotate(45deg);
+}
